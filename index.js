@@ -18,11 +18,12 @@ pinboard.all({}, (err, results) => {
     .map(() => _.random(0, results.length))
     .map((i) => results[i])
     .map(({ description, href, time }) => `
-      <h1>${description}</h1>
-      <h4>${moment(time).fromNow()}</h4>
+      <h2>${description}</h2>
+      <span style="color: #444; font-weight: bold">${moment(time).fromNow()}</span>
+      <br/>
       <a href=${href}>${href}</a>
     `)
-    .join('<br/>\n')
+    .join('<br/><br/>\n')
     .replace('\t', '')
 
   request.post(`https://api.mailgun.net/v3/${MAILGUN_DOMAIN}/messages`, {

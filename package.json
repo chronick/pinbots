@@ -10,6 +10,7 @@
     "request": "^2.81.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "email-random-pins": "node index.js"
   }
 }

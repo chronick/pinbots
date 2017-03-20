@@ -1,0 +1,15 @@
+{
+  "name": "pinbots",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "moment": "^2.18.0",
+    "node-pinboard": "^1.0.0",
+    "request": "^2.81.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
